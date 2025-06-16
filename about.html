@@ -1,142 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="css/about.css">
-  </head>
-  <body>
-    <nav id="navbar">
-      <div class="container nav-container">
-        <a href="#" class="logo"> OKAYAMA</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/about.css">
+  <link href="img/top_logo.png" rel="icon">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo"> OKAYAMA</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div id="lang-switcher" style="position: absolute; right: 20px; top: 20px">
+
+      <button onclick="setLanguage('ne')">NE</button>
+      <button onclick="setLanguage('jp')">JP</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-content">
+      <h1>ABOUT US</h1>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <h1 class="section-title">History</h1>
+  <div class="about-section">
+    <div class="text-side">
+      <p>
+        <b> 🏯 The History of Okayama:</b> From Ancient Times to Modern Day Okayama,
+        located in western Japan, has a deep and rich history that stretches
+        back over 1,500 years. It has grown from an ancient agricultural
+        region into a cultural and historical hub, known today for its
+        legends, castles, and beautiful gardens. 🗿 Ancient Times (Kofun to
+        Nara Period, ~250–794 AD) Okayama was an important center in ancient
+        Japan due to its fertile land and strategic location between eastern
+        and western Japan. The area is home to many kofun (large burial
+        mounds), especially in the Kibi region, which was a powerful local
+        kingdom. The Kingdom of Kibi is thought to have rivaled the Yamato
+        court in early Japan. Artifacts and old shrines from this period still
+        remain, showing its early influence.
+      </p>
+    </div>
+    <div class="img-side">
+      <img src="img/oka1.jpg" alt="Okayama Garden" />
+    </div>
+  </div>
+  <hr>
+
+  <div class="about-section">
+    <div class="text-side">
+      <p>
+        <b>🏯 Medieval Period (Heian to Sengoku Period, 794–1600)</b> During this
+        time, Okayama developed as a castle town under various samurai clans.
+        In the Sengoku Period (Warring States), the region was often involved
+        in feudal conflicts. The Ukita Clan became powerful in the late 1500s.
+        Ukita Hideie, a famous warlord, built Okayama Castle in 1597, helping
+        the area grow as a political and military center. 👘 Edo Period
+        (1603–1868) After the Battle of Sekigahara, the Ukita clan lost power,
+        and the region came under the control of the Ikeda Clan under the
+        Tokugawa shogunate. This was a peaceful and prosperous time for
+        Okayama. The Ikeda lords developed Korakuen Garden—now one of Japan’s
+        Three Great Gardens—and promoted learning, arts, and agriculture. The
+        castle town thrived, and Okayama became a center for commerce and
+        traditional culture. 🚂 Modernization (Meiji Period Onward, 1868–1945)
+        After the Meiji Restoration, Japan modernized rapidly, and Okayama
+        transformed into a modern city. It became a hub for transportation,
+        education, and industry in western Japan. Okayama University was
+        established, making the city known for academic achievement. 🔥 World
+        War II In 1945, parts of Okayama city were badly damaged by air raids
+        during World War II. After the war, the city was rebuilt and
+        modernized, while preserving its historical landmarks.
+      </p>
+    </div>
+    <div class="img-side">
+      <img src="img/portrait_01.jpg" alt="Okayama Garden" />
+    </div>
+  </div>
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h3>About Okayama</h3>
+        <p>
+          Discover the beauty and culture of Okayama Prefecture, Japan's
+          hidden gem in the Setouchi region.
+        </p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a
+            href="https://www.youtube.com/watch?v=zp6DCKsUWJg&ab_channel=%E7%80%AC%E6%88%B8%E5%86%85%E5%B8%82%E5%85%AC%E5%BC%8F%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Travel Guide</a></li>
+          <li><a href="#">Events</a></li>
         </ul>
       </div>
-       <div
-        id="lang-switcher"
-        style="position: absolute; right: 20px; top: 20px"
-      >
-        
-        <button onclick="setLanguage('ne')">NE</button>
-        <button onclick="setLanguage('jp')">JP</button>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header>
-      <div class="hero-content">
-        <h1>ABOUT US</h1>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <h1 class="section-title">History</h1>
-    <div class="about-section">
-      <div class="text-side">
-        <p>
-          <b> 🏯 The History of Okayama:</b> From Ancient Times to Modern Day Okayama,
-          located in western Japan, has a deep and rich history that stretches
-          back over 1,500 years. It has grown from an ancient agricultural
-          region into a cultural and historical hub, known today for its
-          legends, castles, and beautiful gardens. 🗿 Ancient Times (Kofun to
-          Nara Period, ~250–794 AD) Okayama was an important center in ancient
-          Japan due to its fertile land and strategic location between eastern
-          and western Japan. The area is home to many kofun (large burial
-          mounds), especially in the Kibi region, which was a powerful local
-          kingdom. The Kingdom of Kibi is thought to have rivaled the Yamato
-          court in early Japan. Artifacts and old shrines from this period still
-          remain, showing its early influence.
-        </p>
-      </div>
-      <div class="img-side">
-        <img
-          src="img/oka1.jpg"
-          alt="Okayama Garden"
-        />
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Okayama City, Japan</li>
+          <li><i class="fas fa-phone"></i> +81 86-000-0000</li>
+          <li><i class="fas fa-envelope"></i> info@okayama-setouchi.jp</li>
+        </ul>
       </div>
     </div>
-    <hr>
-
-    <div class="about-section">
-      <div class="text-side">
-        <p>
-          <b>🏯 Medieval Period (Heian to Sengoku Period, 794–1600)</b> During this
-          time, Okayama developed as a castle town under various samurai clans.
-          In the Sengoku Period (Warring States), the region was often involved
-          in feudal conflicts. The Ukita Clan became powerful in the late 1500s.
-          Ukita Hideie, a famous warlord, built Okayama Castle in 1597, helping
-          the area grow as a political and military center. 👘 Edo Period
-          (1603–1868) After the Battle of Sekigahara, the Ukita clan lost power,
-          and the region came under the control of the Ikeda Clan under the
-          Tokugawa shogunate. This was a peaceful and prosperous time for
-          Okayama. The Ikeda lords developed Korakuen Garden—now one of Japan’s
-          Three Great Gardens—and promoted learning, arts, and agriculture. The
-          castle town thrived, and Okayama became a center for commerce and
-          traditional culture. 🚂 Modernization (Meiji Period Onward, 1868–1945)
-          After the Meiji Restoration, Japan modernized rapidly, and Okayama
-          transformed into a modern city. It became a hub for transportation,
-          education, and industry in western Japan. Okayama University was
-          established, making the city known for academic achievement. 🔥 World
-          War II In 1945, parts of Okayama city were badly damaged by air raids
-          during World War II. After the war, the city was rebuilt and
-          modernized, while preserving its historical landmarks.
-        </p>
-      </div>
-      <div class="img-side">
-        <img
-          src="img/portrait_01.jpg"
-          alt="Okayama Garden"
-        />
-      </div>
+    <div class="copyright">
+      <p>&copy; 2023 JIBC Okayama All Rights Reserved.</p>
     </div>
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-col">
-          <h3>About Okayama</h3>
-          <p>
-            Discover the beauty and culture of Okayama Prefecture, Japan's
-            hidden gem in the Setouchi region.
-          </p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a
-              href="https://www.youtube.com/watch?v=zp6DCKsUWJg&ab_channel=%E7%80%AC%E6%88%B8%E5%86%85%E5%B8%82%E5%85%AC%E5%BC%8F%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Travel Guide</a></li>
-            <li><a href="#">Events</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Contact Us</h3>
-          <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Okayama City, Japan</li>
-            <li><i class="fas fa-phone"></i> +81 86-000-0000</li>
-            <li><i class="fas fa-envelope"></i> info@okayama-setouchi.jp</li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2023 JIBC Okayama All Rights Reserved.</p>
-      </div>
-    </footer>
-     <!-- this is js  -->
+  </footer>
+  <!-- this is js  -->
   <script src="js/java.js"></script>
-  </body>
+</body>
+
 </html>
