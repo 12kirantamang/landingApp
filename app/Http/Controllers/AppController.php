@@ -35,4 +35,11 @@ class AppController extends Controller
         // Redirect back with success message
         return redirect()->back()->with('success', 'Message sent successfully!');
     }
+    public function blog(){
+        return view('blog');
+    }
+    public function about(){
+        return view('about');
+    }
+
 }
