@@ -94,6 +94,7 @@
 
         .nav-links {
             display: flex;
+            flex-wrap: wrap;
             list-style: none;
         }
 
@@ -181,8 +182,8 @@
             color: #666;
             margin-bottom: 15px;
             font-family: "Gill Sans", sans-serif;
-      letter-spacing: 2px; 
-       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      letter-spacing: 1px; 
+       /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
         }
 
         .card-content a {
@@ -301,83 +302,204 @@
         }
 
         /* Footer */
-        footer {
-            background: #1a2a3a;
-            color: white;
-            padding: 60px 0 20px;
-            justify-content: center;
+         /* Footer */
+    footer {
+      background: #1a2a3a;
+      color: white;
+      padding: 60px 0 20px;
+      width: 100%;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      background: #ffd700;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+      color: #ffd700;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: #ffd700;
+      color: #333;
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    footer {
+      justify-content: center;
+      align-items: center;
+    }
+    /* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .itinerary-cards {
+        flex-direction: column;
         align-items: center;
-        }
+    }
+}
 
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 0;
+    }
 
-        .footer-col h3 {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-        .footer-col h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background: #FFD700;
-        }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+    }
 
-        .footer-col ul {
-            list-style: none;
-        }
+    .nav-links li {
+        margin: 10px 0;
+    }
 
-        .footer-col ul li {
-            margin-bottom: 10px;
-        }
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
 
-        .footer-col ul li a {
-            color: #ddd;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+    .hero-content p {
+        font-size: 1rem;
+    }
 
-        .footer-col ul li a:hover {
-            color: #FFD700;
-        }
+    .section-title {
+        font-size: 2rem;
+    }
 
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
 
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: white;
-            transition: all 0.3s ease;
-        }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
 
-        .social-links a:hover {
-            background: #FFD700;
-            color: #333;
-            transform: translateY(-3px);
-        }
+    .facts-container {
+        flex-direction: column;
+    }
 
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
+    .itinerary-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .fact-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .fact-item p {
+        font-size: 0.9rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    .footer-col h3 {
+        font-size: 1.1rem;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+    }
+}

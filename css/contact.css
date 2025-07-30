@@ -69,6 +69,7 @@
 
     .nav-links {
       display: flex;
+      flex-wrap: wrap;
       list-style: none;
     }
 
@@ -167,6 +168,8 @@
       background: #1a2a3a;
       color: white;
       padding: 60px 0 20px;
+      margin-top: 2px;
+      width: 100%;
     }
 
     .footer-container {
@@ -246,3 +249,119 @@
       justify-content: center;
       align-items: center;
     }
+    /* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .itinerary-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-container {
+        flex-direction: column;
+    }
+
+    .itinerary-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .fact-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .fact-item p {
+        font-size: 0.9rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+
+    .footer-col h3 {
+        font-size: 1.1rem;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+    }
+}
